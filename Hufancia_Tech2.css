@@ -1,0 +1,200 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+body {
+    animation: fadeIn 1s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Product Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #150734;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#header h1,
+#header h2,
+#header p {
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#header span {
+    color: orange;
+}
+
+#header button {
+    padding: 15px;
+    width: 150px;
+    margin-top: 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 0px;
+    color: #150734;
+    animation: fadeInUp 1s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#header button:hover {
+    background-color: #fff;
+    color: #150734;
+    transform: scale(1.1);
+}
+
+#header img,
+#about-me img,
+#project .card-img-top {
+    width: 100%;
+    animation: fadeInRight 1s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+#about-me {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about-me h2,
+#about-me p {
+    color: #150734;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#about-me button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: #150734;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#about-me button:hover {
+    background-color: #fff;
+    color: #150734;
+    transform: scale(1.1);
+}
+
+#project {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#project h2 {
+    text-align: center;
+    color: #150734;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#project .card {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#project .col-md-4 {
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#project .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#project .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+#contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #150734;
+    background-size: cover;
+    text-align: center;
+}
+
+#contact h1,
+#contact p {
+    color: #fff;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contact label,
+#contact input,
+#contact button {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#contact button {
+    padding: 15px;
+    background-color: orange;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#contact button:hover {
+    background-color: #fff;
+    color: #150734;
+    transform: scale(1.1);
+}
+
+#footer {
+    background-color: #150734;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#footer p {
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    rel="stylesheet"  type='text/css'>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!--NavBar section-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Miguel's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#hero">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutMe">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacts">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End of NavBar Section -->
+
+    <!-- Hero Section -->
+    <div class="hero-container" id='hero'>
+        <div class="row">
+            <div class="col-sm">
+                <h1>MIGUEL HUFANCIA</h1>
+                <img src="./img/Miguel Grad Pic.jpeg" class="img-fluid" alt="Miguel Hufancia">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+            </div>
+        </div>
+        <button>Read More!</button>
+    </div>
+    <!-- End of Hero Section -->
+
+    <!-- About Me Section -->
+    <div class ="aboutMe" id="aboutMe">
+        <div class="about-title">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="box">
+            <div class="aboutmecard">
+                <i class="fas fa-code"></i>
+                <h5>Skills Set</h5>
+                <div class="pra">
+                    <ul>
+                        <li>Adobe Premiere</li>
+                        <li>DaVinci Resolve</li>
+                        <li>Microsoft Office</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aboutmecard">
+                <i class="fas fa-graduation-cap"></i>
+                <h5>Education</h5>
+                <div class="pra">
+                    <ul>
+                        <li>Bachelor of Science in Information Technology (Specialization in Web and Mobile Application)</li>
+                        <li>Online Photography Course</li>
+                        <li>Adobe Certified Professional</li>
+                        <li>Certification in Web Development</li>
+                        <li>Microsoft Office Specialist Certification</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aboutmecard">
+                <i class="fas fa-briefcase"></i> 
+                <h5>Experience</h5>
+                <div class="pra">
+                    <ul>
+                        <li>Web Development Coordinator</li>
+                        <li>Front-End Developer</li>
+                        <li>Freelance Photographer</li>
+                        <li>Software Developer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aboutmecard">
+                <i class="fas fa-heart"></i>
+                <h5>Interest</h5>
+                <div class="pra">
+                    <ul>
+                        <li>Video Editing</li>
+                        <li>Photoshoot</li>
+                        <li>Basketball</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of About Me Section -->
+
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="project-title">
+            <h2>Projects</h2>
+        </div>
+        <div id='projects' class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/KSK.png" class="card-img-top" alt="Video Editing">
+                        <div class="card-body">
+                            <h5 class="card-title">Video Editing</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo.
+                                Impedit soluta deserunt molestias similique amet aut non quod voluptatum, architecto unde
+                                molestiae ratione aperiam exercitationem, eius excepturi eveniet laborum.</p>
+                            <button id="openButton1" onclick="openYouTubeVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Click to View</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/CHURCH.png" class="card-img-top" alt="Photography">
+                        <div class="card-body">
+                            <h5 class="card-title">Photography</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas animi
+                                aliquam ad ducimus quos natus labore ab repudiandae? Explicabo, ex obcaecati. Magni repellendus
+                                quasi sed velit aut eveniet quisquam consequatur.</p>
+                            <button id="openButton2" onclick="openYouTubeVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Click to View</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/WEBSITE.png" class="card-img-top" alt="Web Designing">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Designing</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magnam
+                                odio, vitae reprehenderit numquam, veniam quasi ea pariatur ab corporis nulla placeat
+                                laudantium beatae labore error sequi libero sed nihil.</p>
+                            <button id="openButton3" onclick="openYouTubeVideo('https://www.youtube.com/watch?v=dQw4w9WgXcQ')">Click to View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Projects Section -->
+
+    <script>
+        function openYouTubeVideo(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+
+    <!-- Contact Me Section -->
+    <div id="contacts" class="container mt-4">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="form-group">
+                    <label for="emailInput">EMAIL ADDRESS:</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Your email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="numberInput">CONTACT NUMBER:</label>
+                    <input type="tel" class="form-control" id="numberInput" placeholder="Your phone number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                    <small id="numberHelp" class="form-text text-muted">Enter your phone number.</small>
+                </div>
+                <button type="submit" class="contacts-button">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    <!-- End of Contact Us Section -->
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Miguel Hufancia</p>
+        <p>Get to know Me More!</p>
+        <div class="social">
+            <a href="https://www.instagram.com/yugshufancia/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/miguelyugi.hufancia" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://github.com/Yugs2823" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p class="end">&copy; By Miguel Hufancia || All Rights Reserved.</p>
+    </footer>
+    <!-- End of Footer Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+</html>

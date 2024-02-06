@@ -1,18 +1,19 @@
 /* NavBar Section */
-.nav {
+.navbar {
     justify-content: center !important;
-    display: block !important;
-    margin: auto !important;
-}
-.nav-item {
-    display: inline-block;
 }
 
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white !important;
+}
 /* Hero Section */
 .img-fluid {
     width: 300px;
     border-radius: 300px;
     border: solid;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .hero-container {
@@ -20,17 +21,19 @@
     width: 100%;
     padding: 70px;
     color: white;
-    text-align: center; /* Center text within the hero container */
+    text-align: center; 
 }
 
 .hero-container h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    animation: fadeInSideways 2s ease-in-out forwards;
 }
 
 .hero-container h4 {
     font-size: 24px;
     margin-bottom: 20px;
+    animation: fadeInSideways 2s ease-in-out forwards;
 }
 
 .hero-container button {
@@ -41,11 +44,13 @@
     font-size: 18px;
     cursor: pointer;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .hero-container button:hover {
     background: #8c3f3f;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 /* About Me Section */
@@ -58,7 +63,6 @@
 .about-title h2 {
     color: white;
     font-size: 75px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
@@ -73,14 +77,20 @@
 .aboutmecard {
     height: 500px;
     width: 335px;
-    padding: 20px 35px;
+    padding: 30px 35px;
     background: #191919;
     border-radius: 40px;
-    margin: 34px;
+    margin: auto 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.aboutmecard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .aboutmecard i {
-    font-size: 50px;
+    font-size: 70px;
     display: block;
     text-align: center;
     margin: 25px 0px;
@@ -119,11 +129,22 @@ h5 {
 .card {
     height: 500px;
     margin: auto;
-    
 }
+
 .card p{
     height: 60%;
 }
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
 .card button{
     background-color: #b04e4e;
     width: 250px;
@@ -134,7 +155,15 @@ h5 {
     font-style: bold;
     margin: auto !important;
     display: block;
- }
+    transition: background 0.3s, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card button:hover {
+    background-color: #8c3f3f;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
 /* Contacts Section */
 .contact-form {
     margin: 0 auto;
@@ -156,6 +185,12 @@ h5 {
     border-radius: 25px;
     color: white;
     font-style: bold;
+}
+
+.contacts-button:hover {
+    background-color: #8c3f3f;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 /* Footer Section */
@@ -201,6 +236,12 @@ footer p:nth-child(2) {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    transition: background 0.3s, transform 0.3s ease-in-out;
+}
+
+.social a:hover {
+    background: #8c3f3f;
+    transform: scale(1.1);
 }
 
 .end {
@@ -217,36 +258,28 @@ footer p:nth-child(2) {
        display: block;
     }
     .aboutmecard {
-        width: 100%;
-        margin:auto;
-        overflow: hidden;
+        width: 80%; 
+        margin: 20px auto; 
+        padding: 20px; 
     }
     .about-title h2{
-        margin: auto;
-        display: block;
-        width: 100%;
+        font-size: 40px; 
+        margin: 20px auto; 
     }
-    .pra{
-        width: 100%;
-        height: 60%;
-        display: block;
-    }
-
     .pra li {
-        font-size: 3vw;
+        font-size: 16px;
     }
-
     .contact-form{
-        padding:0% !important;
+        padding: 10px !important; 
     }
 
     .contact-form h2{
-        width: 100%;
+        width: 100%; 
     }
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .contact-form h2{
         width: 100%;
     }
@@ -257,15 +290,15 @@ footer p:nth-child(2) {
      }
      .aboutmecard {
          width: 100%;
-         margin:auto;
+         margin: 20px auto;
          overflow: hidden;
      }
      .about-title h2{
-         margin: auto;
          display: block;
          width: 100%;
      }
      .pra{
+         margin: auto;
          width: 100%;
          height: 60%;
          display: block;
@@ -285,7 +318,32 @@ footer p:nth-child(2) {
         width: 100%;
      }
 
-     .end p {
-        background-color: red;
-     }
+}
+
+body {
+    opacity: 0;
+    animation: fadeInPage 1s ease-in-out forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

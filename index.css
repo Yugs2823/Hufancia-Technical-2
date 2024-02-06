@@ -236,12 +236,7 @@ footer p:nth-child(2) {
     color: white;
     text-decoration: none;
     font-size: 20px;
-    transition: background 0.3s, transform 0.3s ease-in-out;
-}
-
-.social a:hover {
-    background: #8c3f3f;
-    transform: scale(1.1);
+    
 }
 
 .end {
